@@ -1,0 +1,78 @@
+@mixin filling ($bgc) {
+    background-color: $bgc;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px; 
+    }
+
+    &-hillel {
+        @include filling(#1C4280);
+    }
+
+    &-wanna {
+        @include filling(#143646);
+    }
+
+    &-tapgerine {
+        @include filling(#F48B30);
+    }
+    &-look {
+        @include filling(#9E4DC3);
+    }
+    &-orangear {
+        @include filling(#FD9339);
+    }
+    &-adtelligent {
+        @include filling(#E2E2E4);
+    }
+    &-clickky {
+        @include filling(#C71C36);
+    }
+    &-ecolease {
+        @include filling(#DCF3F9);
+    }
+    &-infa {
+        @include filling(#EAEAEA);
+    }
+    &-siti {
+        @include filling(#282240);
+    }
+    &-art {
+        @include filling(#1D4568);
+    }
+    &-card {
+        @include filling(#000000);
+    }
+}
+
+@media (max-width: 768px) {
+    .partners-link:nth-child(n + 7) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .partners {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1920px) {
+    .partners {
+       width: 1720px;
+       margin-left: auto;
+       margin-right: auto;
+       border-radius: 20px;
+       overflow: hidden;
+    }
+}

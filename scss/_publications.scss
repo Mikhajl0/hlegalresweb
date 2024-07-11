@@ -1,0 +1,132 @@
+.publications {
+    background-color: #F5F5FA;
+    padding-top: 30px;
+
+    &-top {
+        display: grid;
+        gap: 30px;
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    &-link {
+        @include text-decor;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 5px;
+
+        &:hover  {
+            color: #F0145A;
+        }
+    }
+
+    &-title {
+        @include font-red;
+        margin: 0;
+    }
+
+    &-bloc {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    &-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        position: relative;
+        width: 100%;
+        overflow: hidden; 
+    }
+
+    &-images {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px 8px 0 0;
+        object-fit: cover; 
+        object-position: center; 
+    }
+
+    &-container {
+        padding: 30px;
+    }
+
+    &-name {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #24A3FF;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-decoration: none;
+        display: block;
+    }
+
+    &-data {
+        font-size: 12px;
+        line-height: 15px;
+        color: #B3B3BA;
+        margin-bottom: 15px;
+    }
+
+    &-text {
+        padding-top: 15px;
+        border-top: 4px solid #E6E6F0;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+        margin: 0;
+    }
+}
+
+.publications-link:hover .publications-svg path {
+    stroke: #F0145A;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .publications-title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .publications-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .publications-cards:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+
+    .publications-link{
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .publications-top {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+        .publications-cards:nth-child(3) {
+        grid-column: auto / auto;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .wrapper {
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 160px;
+        padding-right: 160px;
+    }    
+}

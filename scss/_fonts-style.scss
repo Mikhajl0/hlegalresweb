@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?9j6clo');
+  src:  url('../fonts/icomoon.eot?9j6clo#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9j6clo') format('truetype'),
+    url('../fonts/icomoon.woff?9j6clo') format('woff'),
+    url('../fonts/icomoon.svg?9j6clo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-court:before {
+  content: "\e903";
+}
+.icon-protection:before {
+  content: "\e904";
+}
+.icon-trust:before {
+  content: "\e905";
+}
+.icon-coprorate:before {
+  content: "\e906";
+}
+.icon-support:before {
+  content: "\e907";
+}
+.icon-basket .path1:before {
+  content: "\e900";
+  color: #F0145A;
+}
+.icon-basket .path2:before {
+  content: "\e901";
+  margin-left: -1.5em;
+  color: #F0145A;
+}
+.icon-basket .path3:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(255, 255, 255);
+}
