@@ -9,27 +9,77 @@
 <body>
     <section class="hero">
         <header class="hero-mobale">
-            <div>
-                <div>
-                    <div>
-                        <a href="/">УК</a>
-                        <a href="/">РУ</a>
-                        <a href="/">EN</a>
+            <div class="hero-mobale-div">
+                <div class="hero-mobale-bloc">
+                    <div class="hero-mobale-div-link">
+                        <a href="/" class="hero-mobale-link">УК</a>
+                        <a href="/" class="hero-mobale-link">РУ</a>
+                        <a href="/" class="hero-mobale-link">EN</a>
                     </div>
-                    <a href="tel:+380800211927" class="footer-tel">0800 211 927</a>
+                    <a href="tel:+380800211927" class="hero-mobale-tel">0800 211 927</a>
                 </div>
-                <div>
+                <div class="hero-mobale-cell">
                     <a href="/">
-                        <img src="" alt="logo">
+                        <img src="./images/logo-mobale.png" alt="logo">
                     </a>
-                    <button>@</button>
+                    <button class="hero-mobale-button">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10.5H25" stroke="white" stroke-width="2"/>
+                            <path d="M7 16.5H25" stroke="white" stroke-width="2"/>
+                            <path d="M7 22.5H25" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            <h1>you legal solutions provider</h1>
-            <button>@</button>
+            <h2 class="hero-mobale-title">you legal solutions provider</h2>
+            <button class="hero-mobale-button">
+                <img src="./images/scroll.png" alt="button" width="42" height="42">
+            </button>
         </header>
         <div class="wrapper">
-            <header>
+            <header class="header">
+                <div class="header-bloc">
+                    <div class="header-bloc-address">
+                        <div>
+                            <a href="/" class="header-link">УК</a>
+                            <a href="/" class="header-link">РУ</a>
+                            <a href="/" class="header-link active">EN</a>
+                        </div>
+                        <div class="header-point"></div>
+                        <h5 class="header-title">Kyiv, Mechnikova str., 14/1</h5>
+                        <div class="header-point"></div>
+                        <a href="tel:+380800211927" class="header-tel">0800 211 927</a>
+                        <div class="header-point"></div>
+                        <div>
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_150154_2712)">
+                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_150154_2712">
+                                <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="header-logo">
+                        <a href="/">
+                            <img src="./images/logo.png" alt="logo" width="130" height="60">
+                        </a>
+                    </div>
+                    <div class="header-bloc-list">
+                        <a href="/" class="header-list">about us</a>
+                        <a href="/" class="header-list">services</a>
+                        <a href="/" class="header-list">team</a>
+                        <a href="/" class="header-list">publications</a>
+                        <a href="/" class="header-list">contact</a>
+                    </div>
+                </div>
+                <h1 class="header-top-title">you legal solutions provider</h1>
+                <button class="header-button">
+                    <img src="./images/scroll.png" alt="button" width="42" height="42">
+                </button>
             </header>
         </div>
     </section>
@@ -294,5 +344,20 @@
             </div>
         </section>
     </footer>
+    <!-- dialog / pop up -->
+     <div class="menu-background menu-click">
+        <div class="menu-container">
+            <button class="menu-exit">
+                <img src="./images/exit.png" alt="exit">
+            </button>
+            <div class="menu-list">
+                <a href="/" class="menu-item">about us</a>
+                <a href="/" class="menu-item">послуги</a>
+                <a href="/" class="menu-item">команда</a>
+                <a href="/" class="menu-item">публікації</a>
+                <a href="/" class="menu-item menu-item-active">контакти</a>
+            </div>
+        </div>
+     </div>
 </body>
 </html>
