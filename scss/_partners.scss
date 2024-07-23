@@ -1,5 +1,13 @@
-@mixin filling ($bgc) {
-    background-color: $bgc;
+@use "./mixins";
+
+.partner-title {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #323264;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .partners {
@@ -15,42 +23,42 @@
     }
 
     &-hillel {
-        @include filling(#1C4280);
+        @include mixins.filling(#1C4280);
     }
 
     &-wanna {
-        @include filling(#143646);
+        @include mixins.filling(#143646);
     }
 
     &-tapgerine {
-        @include filling(#F48B30);
+        @include mixins.filling(#F48B30);
     }
     &-look {
-        @include filling(#9E4DC3);
+        @include mixins.filling(#9E4DC3);
     }
     &-orangear {
-        @include filling(#FD9339);
+        @include mixins.filling(#FD9339);
     }
     &-adtelligent {
-        @include filling(#E2E2E4);
+        @include mixins.filling(#E2E2E4);
     }
     &-clickky {
-        @include filling(#C71C36);
+        @include mixins.filling(#C71C36);
     }
     &-ecolease {
-        @include filling(#DCF3F9);
+        @include mixins.filling(#DCF3F9);
     }
     &-infa {
-        @include filling(#EAEAEA);
+        @include mixins.filling(#EAEAEA);
     }
     &-siti {
-        @include filling(#282240);
+        @include mixins.filling(#282240);
     }
     &-art {
-        @include filling(#1D4568);
+        @include mixins.filling(#1D4568);
     }
     &-card {
-        @include filling(#000000);
+        @include mixins.filling(#000000);
     }
 }
 

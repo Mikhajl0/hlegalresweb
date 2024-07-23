@@ -1,61 +1,19 @@
+@use './mixins';
+
 .wrapper {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-@mixin font ($fs: 22px, $lh: 26px) {
-    font-size: $fs;
-    line-height: $lh;
-}
-
-@mixin font-red {
-    font-size: 30px;
-    line-height: 36px;
-    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-    background-clip: text; 
-    -webkit-text-fill-color: transparent;
-}
-
-@mixin text-decor {
-    text-decoration: none;
-    color: #24A3FF;
-    font-weight: 700;
-}
-
-@mixin font-icon {
-    background-color: #FFFFFF;
-    border-radius: 24px;
-    padding: 14px;
-    height: 92px;
-    width: 92px;
-}
-
-@mixin flex-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-
-@mixin radius {
-    border-radius: 0 0 12px 12px;
-}
-
-@mixin content {
-    content: '';
-    position: absolute;
-    left: 0;
-    height: 10px; 
-}
-
 .cards-inner {
-    @include flex-box;
+    @include mixins.flex-box;
     gap: 30px;
 }
 
 .services {
     &-link {
-        @include font(14px, 17px);
-        @include text-decor;
+        @include mixins.font(14px, 17px);
+        @include mixins.text-decor;
         
         &:hover  {
             color: #F0145A;
@@ -63,7 +21,7 @@
     }
 
     &-title {
-        @include font-red;
+        @include mixins.font-red;
         margin-top: 10px;
         margin-bottom: 30px;
     }
@@ -72,7 +30,7 @@
 .cards {
     &-back-color {
         background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-        @include radius;
+        @include mixins.radius;
         padding-bottom: 60px;
     }
 
@@ -86,13 +44,13 @@
         display: inline-block;
         font-size: 64px;
         color: #F0145A;
-        @include font-icon;
+        @include mixins.font-icon;
         margin-bottom: 30px
     }
 
     &-link {
-        @include font;
-        @include text-decor;
+        @include mixins.font;
+        @include mixins.text-decor;
     }
 
     &-text {
@@ -110,7 +68,7 @@
 
 .line-container::before,
 .line-container::after {
-    @include content;
+    @include mixins.content;
 }
 
 .line-container::before {
