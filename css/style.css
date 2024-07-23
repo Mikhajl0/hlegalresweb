@@ -446,7 +446,7 @@ body {
 }
 
 .menu-click {
-  display: flex;
+  display: none;
 }
 
 .menu-container {
@@ -994,7 +994,7 @@ input[type=radio] {
 }
 @media (min-width: 1440px) {
   .slider-photo {
-    width: 100%;
+    width: 400px;
     height: 344px;
   }
 }
