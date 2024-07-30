@@ -316,6 +316,12 @@ body {
   font-family: Montserrat, sans-serif;
 }
 
+.gradient-background {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background-size: cover;
+  background-position: center;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?9j6clo");
@@ -373,10 +379,6 @@ body {
   content: "\e902";
   margin-left: -1.5em;
   color: rgb(255, 255, 255);
-}
-
-.hero {
-  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
 .hero-mobale {
@@ -733,7 +735,6 @@ header {
 }
 
 .cards-back-color {
-  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
   padding-bottom: 60px;
 }
@@ -842,6 +843,7 @@ header {
   overflow: hidden;
   padding-top: 30px;
   padding-bottom: 60px;
+  background-color: #FFFFFF;
 }
 .slider-bloc {
   display: flex;
@@ -1010,6 +1012,10 @@ input[type=radio] {
     height: 298px;
   }
 }
+.partners-bloc {
+  background-color: #FFFFFF;
+}
+
 .partner-title {
   display: flex;
   font-size: 14px;
@@ -1017,6 +1023,7 @@ input[type=radio] {
   font-weight: 700;
   color: #323264;
   justify-content: center;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 

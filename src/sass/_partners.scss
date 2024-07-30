@@ -1,5 +1,9 @@
 @use "./mixins";
 
+.partners-bloc {
+    background-color: #FFFFFF;
+}
+
 .partner-title {
     display: flex;
     font-size: 14px;
@@ -7,6 +11,7 @@
     font-weight: 700;
     color: #323264;
     justify-content: center;
+    margin-top: 0;
     margin-bottom: 30px;
 }
 
