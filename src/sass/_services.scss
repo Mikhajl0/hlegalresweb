@@ -29,7 +29,6 @@
 
 .cards {
     &-back-color {
-        // background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
         @include mixins.radius;
         padding-bottom: 60px;
     }
@@ -125,7 +124,6 @@
 @media (min-width: 1920px) {
 
     .cards {
-        // width: 1920px;
         margin-left: auto;
         margin-right: auto;
     }    

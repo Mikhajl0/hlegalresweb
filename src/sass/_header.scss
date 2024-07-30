@@ -3,7 +3,7 @@
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(../assets/images/h-mobale.png);
+    background-image: url(./images/h-mobale.png);
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
@@ -134,15 +134,18 @@ header {
         display: block;
     }
 
+    .header-back {
+        background-image: url(./images/h-destop.png);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+    }
+
     .header {
         display: flex;
         height: 100vh;
         flex-direction: column;
         justify-content: space-between;
-        background-image: url(../assets/images/h-destop.png);
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: overlay;
         padding-top: 50px;
         padding-bottom: 30px;
 
