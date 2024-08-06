@@ -1,0 +1,30 @@
+.variables {
+    background-color: #F5F5FA;
+}
+
+.text-custom-blue {
+    color: #24A3FF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.time-color {
+    color: #B3B3BA;
+}
+
+.variables-card {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px)  {
+    .variables-card {
+        width: calc(50% - 30px)
+    }
+}
+
+@media (min-width: 1024px) {
+    .variables-card {
+        width: calc(33.33% - 30px)
+    }
+}

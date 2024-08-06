@@ -6,6 +6,7 @@ const clean = require("gulp-clean");
 const autoprefixer = require("autoprefixer");
 const postcss = require("gulp-postcss");
 const htmlmin = require("gulp-htmlmin");
+const terser = require("gulp-terser");
 const browserSync = require('browser-sync').create();
 
 function css() {
@@ -20,7 +21,15 @@ function css() {
       })
     )
     .pipe(gulp.dest("./build"));
-    // .pipe(browserSync.stream());
+}
+
+function js() {
+  return gulp
+    .src("./src/js/**/*.js")
+    .pipe(terser())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("./build/js"))
+    .pipe(browserSync.stream());
 }
 
 function clear() {
@@ -29,6 +38,7 @@ function clear() {
 
 function watching() {
   gulp.watch("./src/sass/*.scss", css);
+  gulp.watch("./src/js/**/*.js", js);
   gulp.watch("./src/*.html", html).on("change", browserSync.reload);
   gulp.watch('./src/assets/**/*', copy).on('change', browserSync.reload);
 }
@@ -54,6 +64,6 @@ function server() {
 
 exports.start = gulp.series(
   clear,
-  gulp.parallel(css, html, copy),
+  gulp.parallel(css, js, html, copy),
   gulp.parallel(watching, server)
 );
